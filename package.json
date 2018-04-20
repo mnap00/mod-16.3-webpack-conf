@@ -29,8 +29,8 @@
     "watch:html": "onchange \"src/*.html\" -- run-s build:html",
     "watch:sassprefixer": "onchange \"src/sass/*.scss\" -- run-s build-dev:sass build:autoprefixer",
     "watch:babel": "onchange \"src/**/*.js\" \"src/*.js\" -- run-s build-dev:babel",
-    "webpack": "run-s webpack:*",
-    "webpack:build": "webpack ./app.js --output app.bundle.js"
+    "webpack:init": "npm install && run-s init:dev init:files init:gitignore",
+    "webpack:build": "webpack"
   },
   "repository": {
     "type": "git",
